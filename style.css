@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #1c1c1c; /* สีดำเข้ม */
+    color: #e0e0e0; /* สีอ่อนสำหรับข้อความ */
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #2d2d2d; /* สีเทาเข้มสำหรับกล่องเนื้อหา */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* เงาที่เข้มขึ้น */
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff; /* สีขาวสำหรับหัวข้อ */
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.profile-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.profile-links a i {
+    margin-right: 10px;
+}
+
+/* Individual Button Colors */
+.profile-links a:nth-child(1) {
+    background: #ff0000; /* MAVERICK */
+}
+
+.profile-links a:nth-child(2) {
+    background: #0051ff; /* Maverick Glaydiffx */
+}
+
+.profile-links a:nth-child(3) {
+    background: #ff2391; /* mxvxrixx_ */
+}
+
+.profile-links a:nth-child(4) {
+    background: #1d0088; /* Discord */
+}
+
+.profile-links a:hover {
+    opacity: 0.9; /* เปลี่ยนความโปร่งใสเมื่อชี้เมาส์ */
+}
+
+/* รูปโปรไฟล์ */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
