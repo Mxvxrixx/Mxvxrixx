@@ -41,7 +41,22 @@ p {
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.profile-links a:hover {
+    background: #444;
+    transform: scale(1.025);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* รูปโปรไฟล์ */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
 }
 
 .profile-links a i {
@@ -63,17 +78,4 @@ p {
 
 .profile-links a:nth-child(4) {
     background: #1d0088; /* Discord */
-}
-
-.profile-links a:hover {
-    opacity: 0.9; /* เปลี่ยนความโปร่งใสเมื่อชี้เมาส์ */
-}
-
-/* รูปโปรไฟล์ */
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
 }
