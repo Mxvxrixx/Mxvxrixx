@@ -1,79 +1,79 @@
 /* CSS สำหรับหน้าเว็บทั้งหมด */
 body {
-    font-family: 'Arial', sans-serif;
-    background-image: url('standard.gif');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 100vh;
-    color: #e0e0e0;
-    text-align: center;
-    padding: 50px;
+    font-family: 'Arial', sans-serif; /* ตั้งค่าฟอนต์หลักสำหรับหน้าเว็บ */
+    background-image: url('standard2.gif'); /* ตั้งค่าพื้นหลังของหน้าเว็บ */
+    background-size: cover; /* ทำให้พื้นหลังครอบคลุมพื้นที่ทั้งหมด */
+    background-position: center; /* จัดตำแหน่งพื้นหลังให้อยู่กลาง */
+    background-repeat: no-repeat; /* ป้องกันการทำซ้ำของพื้นหลัง */
+    background-attachment: fixed; /* ทำให้พื้นหลังคงที่เมื่อเลื่อนหน้าเว็บ */
+    min-height: 100vh; /* ตั้งค่าความสูงขั้นต่ำของหน้าเว็บให้เต็มหน้าจอ */
+    color: #e0e0e0; /* สีของข้อความในหน้าเว็บ */
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+    padding: 50px; /* การเว้นระยะภายในของเนื้อหา */
 }
 
 .container {
-    max-width: 600px;
-    margin: auto;
-    background: rgba(26, 26, 26, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    max-width: 600px; /* ความกว้างสูงสุดของคอนเทนเนอร์ */
+    margin: auto; /* จัดคอนเทนเนอร์ให้อยู่กลางหน้าเว็บ */
+    background: rgba(26, 26, 26, 0.8); /* สีพื้นหลังและความโปร่งแสงของคอนเทนเนอร์ */
+    padding: 20px; /* การเว้นระยะภายในของคอนเทนเนอร์ */
+    border-radius: 10px; /* มุมโค้งมนของคอนเทนเนอร์ */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* เงาของคอนเทนเนอร์ */
 }
 
 h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #fff;
+    font-size: 36px; /* ขนาดฟอนต์ของหัวเรื่องหลัก */
+    margin-bottom: 20px; /* ระยะห่างด้านล่างของหัวเรื่อง */
+    color: #fff; /* สีของข้อความในหัวเรื่อง */
 }
 
 p {
-    font-size: 18px;
-    margin-bottom: 30px;
+    font-size: 18px; /* ขนาดฟอนต์ของข้อความเพิ่มเติม */
+    margin-bottom: 30px; /* ระยะห่างด้านล่างของข้อความ */
 }
 
 .profile-links {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    display: flex; /* ใช้ Flexbox สำหรับการจัดเรียงลิงก์ */
+    flex-direction: column; /* จัดเรียงลิงก์ในแนวตั้ง */
+    gap: 10px; /* ระยะห่างระหว่างลิงก์ */
 }
 
 .profile-links a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    font-size: 20px;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s, transform 0.3s;
+    display: flex; /* ใช้ Flexbox สำหรับการจัดเรียงเนื้อหาในลิงก์ */
+    align-items: center; /* จัดแนวไอคอนและข้อความให้อยู่กลาง */
+    justify-content: center; /* จัดเนื้อหาภายในลิงก์ให้อยู่กลาง */
+    padding: 10px; /* การเว้นระยะภายในของลิงก์ */
+    font-size: 20px; /* ขนาดฟอนต์ของข้อความในลิงก์ */
+    color: #ffffff; /* สีของข้อความในลิงก์ */
+    text-decoration: none; /* ลบขีดเส้นใต้จากลิงก์ */
+    border-radius: 5px; /* มุมโค้งมนของลิงก์ */
+    transition: background 0.3s, transform 0.3s; /* การเปลี่ยนแปลงพื้นหลังและการขยายขนาดเมื่อโฮเวอร์ */
 }
 
 .profile-links a:hover {
-    background: #444;
-    transform: scale(1.025);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: #444; /* พื้นหลังของลิงก์เมื่อโฮเวอร์ */
+    transform: scale(1.025); /* ขยายขนาดลิงก์เล็กน้อยเมื่อโฮเวอร์ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* เงาของลิงก์เมื่อโฮเวอร์ */
 }
 
 .profile-links a i {
-    margin-right: 10px;
+    margin-right: 10px; /* ระยะห่างด้านขวาของไอคอนในลิงก์ */
 }
 
 /* Individual Button Colors */
-.profile-links a:nth-child(1) { background: #ff0000; }
-.profile-links a:nth-child(2) { background: #0051ff; }
-.profile-links a:nth-child(3) { background: #ff2391; }
-.profile-links a:nth-child(4) { background: #1d0088; }
+.profile-links a:nth-child(1) { background: #ff0000; } /* พื้นหลังของลิงก์ YouTube */
+.profile-links a:nth-child(2) { background: #0051ff; } /* พื้นหลังของลิงก์ Facebook */
+.profile-links a:nth-child(3) { background: #bb226f; } /* พื้นหลังของลิงก์ Instagram */
+.profile-links a:nth-child(4) { background: #1d0088; } /* พื้นหลังของลิงก์ Discord */
 
 /* Profile Picture */
 .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid #fff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s, box-shadow 0.3s;
-    margin-bottom: 20px;
+    width: 150px; /* ความกว้างของรูปโปรไฟล์ */
+    height: 150px; /* ความสูงของรูปโปรไฟล์ */
+    border-radius: 50%; /* ทำให้รูปโปรไฟล์เป็นวงกลม */
+    object-fit: cover; /* ให้รูปภาพปรับขนาดให้พอดีกับกรอบ */
+    border: 5px solid #ffffff; /* ขอบของรูปโปรไฟล์ */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* เงาของรูปโปรไฟล์ */
+    transition: transform 0.3s, box-shadow 0.3s; /* การเปลี่ยนแปลงขนาดและเงาของรูปโปรไฟล์เมื่อโฮเวอร์ */
+    margin-bottom: 20px; /* ระยะห่างด้านล่างของรูปโปรไฟล์ */
 }
