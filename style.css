@@ -1,19 +1,26 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: #1c1c1c; /* สีดำเข้ม */
+    background-image: url('BG.jpg'); /* ใส่เส้นทางของรูปภาพที่ต้องการ */
+    background-size: cover; /* ทำให้รูปภาพครอบคลุมพื้นที่ทั้งหมด */
+    background-position: center; /* จัดรูปภาพให้อยู่ตรงกลาง */
+    background-repeat: no-repeat; /* ป้องกันไม่ให้รูปภาพซ้ำ */
+    background-attachment: fixed; /* ทำให้พื้นหลังติดอยู่กับหน้าจอ */
+    min-height: 100vh; /* ทำให้ความสูงของหน้าขั้นต่ำเท่ากับความสูงของหน้าจอ */
     color: #e0e0e0; /* สีอ่อนสำหรับข้อความ */
     text-align: center;
     padding: 50px;
 }
 
+
 .container {
     max-width: 600px;
     margin: auto;
-    background: #2d2d2d; /* สีเทาเข้มสำหรับกล่องเนื้อหา */
+    background: rgba(26, 26, 26, 0.8); /* สีเทาเข้มโปร่งแสงสำหรับกล่องเนื้อหา */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* เงาที่เข้มขึ้น */
 }
+
 
 h1 {
     font-size: 36px;
