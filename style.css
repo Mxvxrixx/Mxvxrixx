@@ -1,12 +1,13 @@
+/* CSS สำหรับหน้าเว็บทั้งหมด */
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url('BG.jpg'); /* ใส่เส้นทางของรูปภาพที่ต้องการ */
-    background-size: cover; /* ทำให้รูปภาพครอบคลุมพื้นที่ทั้งหมด */
-    background-position: center; /* จัดรูปภาพให้อยู่ตรงกลาง */
-    background-repeat: no-repeat; /* ป้องกันไม่ให้รูปภาพซ้ำ */
-    background-attachment: fixed; /* ทำให้พื้นหลังติดอยู่กับหน้าจอ */
-    min-height: 100vh; /* ทำให้ความสูงของหน้าขั้นต่ำเท่ากับความสูงของหน้าจอ */
-    color: #e0e0e0; /* สีอ่อนสำหรับข้อความ */
+    background-image: url('standard.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: #e0e0e0;
     text-align: center;
     padding: 50px;
 }
@@ -14,16 +15,16 @@ body {
 .container {
     max-width: 600px;
     margin: auto;
-    background: rgba(26, 26, 26, 0.8); /* สีเทาเข้มโปร่งแสงสำหรับกล่องเนื้อหา */
+    background: rgba(26, 26, 26, 0.8);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* เงาที่เข้มขึ้น */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #fff; /* สีขาวสำหรับหัวข้อ */
+    color: #fff;
 }
 
 p {
@@ -60,61 +61,19 @@ p {
 }
 
 /* Individual Button Colors */
-.profile-links a:nth-child(1) {
-    background: #ff0000; /* MAVERICK */
-}
+.profile-links a:nth-child(1) { background: #ff0000; }
+.profile-links a:nth-child(2) { background: #0051ff; }
+.profile-links a:nth-child(3) { background: #ff2391; }
+.profile-links a:nth-child(4) { background: #1d0088; }
 
-.profile-links a:nth-child(2) {
-    background: #0051ff; /* Maverick Glaydiffx */
-}
-
-.profile-links a:nth-child(3) {
-    background: #ff2391; /* mxvxrixx_ */
-}
-
-.profile-links a:nth-child(4) {
-    background: #1d0088; /* Discord */
-}
-
-/* รูปโปรไฟล์ */
+/* Profile Picture */
 .profile-pic {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
     margin-bottom: 20px;
-}
-
-/* QR Code Popup */
-.qr-popup {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    z-index: 1000; /* ให้ป๊อปอัพอยู่เหนือเนื้อหาอื่น */
-}
-
-.qr-popup img {
-    width: 150px; /* ขนาดของ QR Code */
-    height: 150px; /* ขนาดของ QR Code */
-}
-
-.download-btn {
-    display: block;
-    margin-top: 10px;
-    padding: 5px 10px;
-    background: #0051ff;
-    color: white;
-    text-align: center;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 14px;
-    transition: background 0.3s;
-}
-
-.download-btn:hover {
-    background: #003bb5;
 }
