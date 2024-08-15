@@ -12,7 +12,13 @@
     <!-- Container for the main content -->
     <div class="container">
         <!-- Profile Picture -->
-        <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+        <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic" id="profilePic">
+        
+        <!-- Modal for the enlarged profile picture -->
+        <div id="modal" class="modal">
+            <span class="close" id="closeModal">&times;</span>
+            <img class="modal-content" id="imgModal">
+        </div>
         
         <!-- Main Heading -->
         <h1>𝐂𝐨𝐧𝐧𝐞𝐜𝐭 𝐰𝐢𝐭𝐡 𝐌𝐞</h1>
@@ -37,7 +43,7 @@
         </div>
     </div>
     
-    <!-- Script for JavaScript functionality (not in use currently) -->
+    <!-- Script for JavaScript functionality -->
     <script src="script.js"></script>
 </body>
 </html>
